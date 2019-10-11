@@ -33,6 +33,6 @@ export class AuthService {
   }
 
   get isLoggedIn () {
-    return this.isLoggedIn;
+    return this.isUerLogginIn.value;
   }
 }

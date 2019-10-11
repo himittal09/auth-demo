@@ -6,6 +6,8 @@ import { LoginComponent } from './login/login.component';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [LoginComponent],
@@ -13,7 +15,9 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     MatButtonModule,
     MatFormFieldModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule,
+    MatInputModule
   ]
 })
 export class UserModule { }

@@ -7,6 +7,9 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { RouterModule } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [AdminLoginComponent],
@@ -14,7 +17,10 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     MatButtonModule,
     MatFormFieldModule,
-    RouterModule
+    MatCardModule,
+    RouterModule,
+    ReactiveFormsModule,
+    MatInputModule
   ]
 })
 export class AdminModule { }
