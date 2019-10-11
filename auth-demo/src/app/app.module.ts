@@ -9,19 +9,27 @@ import { UserModule } from './user/user.module';
 import { AdminModule } from './admin/admin.module';
 import { SharedModule } from './shared/shared.module';
 
+import {MatButtonModule} from '@angular/material/button'; 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     AuthModule,
     BrowserAnimationsModule,
     UserModule,
     AuthModule,
     AdminModule,
-    SharedModule
+    SharedModule,
+    MatFormFieldModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

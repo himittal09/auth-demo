@@ -25,7 +25,7 @@
             <a [routerLink]="['/admin', 'login']" *ngIf="!isUserLoggedIn">Login Admin</a>
             <a class="pointerCursor" (click)="logout()" *ngIf="isUserLoggedIn">Logout</a>
           </mat-toolbar>
-      <ng-content class="container"></ng-content>
+      <ng-content></ng-content>
     </mat-sidenav-content>
   </mat-sidenav-container>
   
