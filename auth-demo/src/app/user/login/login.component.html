@@ -1,0 +1,42 @@
+<div class="example-container">
+  <div class="formcss">
+      <mat-form-field>
+          <h2>User Login</h2>
+          <hr>
+      </mat-form-field>
+  
+    <mat-form-field>
+      <input type="text"
+      class="form-control"
+      id="username"
+      placeholder="Enter Username"
+      formControlName="username"
+      required
+      maxlength="50">
+      <mat-error *ngIf="(!userLoginForm.controls.username.valid && userLoginForm.controls.username.touched)">Invalid Username</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+          <input type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+                formControlName="password"
+                required
+                maxlength="64"
+                minlength="8">
+                <mat-error *ngIf="(!userLoginForm.controls.password.valid && userLoginForm.controls.password.touched)">Invalid Password</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+        <p class="lead">Not Registered? <a [routerLink]="['/user', 'signup']">Register Here</a></p>
+    </mat-form-field>
+  
+    <mat-form-field>
+        <button type="submit"
+        [disabled]="!userLoginForm.valid" mat-raised-button color="primary">Submit</button>
+    </mat-form-field>
+  
+  </div>
+    
+</div>
